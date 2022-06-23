@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-loans/static/css/main.f923dc2a.css",
-    "main.js": "/react-loans/static/js/main.f7efb3d3.js",
-    "static/js/787.4c474436.chunk.js": "/react-loans/static/js/787.4c474436.chunk.js",
-    "index.html": "/react-loans/index.html",
-    "main.f923dc2a.css.map": "/react-loans/static/css/main.f923dc2a.css.map",
-    "main.f7efb3d3.js.map": "/react-loans/static/js/main.f7efb3d3.js.map",
-    "787.4c474436.chunk.js.map": "/react-loans/static/js/787.4c474436.chunk.js.map"
+    "main.css": "/loans/static/css/main.f923dc2a.css",
+    "main.js": "/loans/static/js/main.429d2c42.js",
+    "static/js/787.4c474436.chunk.js": "/loans/static/js/787.4c474436.chunk.js",
+    "index.html": "/loans/index.html",
+    "main.f923dc2a.css.map": "/loans/static/css/main.f923dc2a.css.map",
+    "main.429d2c42.js.map": "/loans/static/js/main.429d2c42.js.map",
+    "787.4c474436.chunk.js.map": "/loans/static/js/787.4c474436.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f923dc2a.css",
-    "static/js/main.f7efb3d3.js"
+    "static/js/main.429d2c42.js"
   ]
 }
