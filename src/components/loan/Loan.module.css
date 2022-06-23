@@ -1,0 +1,81 @@
+.loan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 676px;
+    border-radius: 20px;
+    border: 1px solid var(--color-border);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.loan:last-child {
+    margin-bottom: 0;
+}
+.loanCont {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-right: 15px;
+}
+.loanCont h3 {
+    margin-bottom: 15px;
+}
+.loanLabel {
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-green);
+}
+/*media*/
+@media(max-width: 991px){
+    .loan {
+        padding: 28px;
+    }
+    .loanLabel {
+        right: 28px;
+    }
+    .loanCont h3 {
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 767px){
+    .loan {
+        padding: 25px;
+    }
+    .loanLabel {
+        top: 10px;
+        right: 25px;
+        font-size: 15px;
+    }
+}
+@media(max-width: 575px){
+    .loan {
+        padding: 20px;
+    }
+    .loanLabel {
+        right: 20px;
+    }
+}
+@media(max-width: 480px){
+    .loan {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .loanLabel {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 10px;
+    }
+    .loanCont {
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    .loanCont h3 {
+        margin-bottom: 8px;
+    }
+}

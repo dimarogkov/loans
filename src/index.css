@@ -1,13 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+
+:root {
+  --color-white: #fff;
+  --color-black: #303247;
+  --color-yellow: #F7E308;
+  --color-red: #E43F3F;
+  --color-green: #51A571;
+  --color-layer: rgba(26, 26, 26, 0.8);
+  --color-border: rgba(48, 50, 71, 0.1);
+  --header-height: 100px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box;
+}
+html:not(.touch-screen)::-webkit-scrollbar,
+html:not(.touch-screen) *::-webkit-scrollbar {
+  width: 6px;
+  height:6px;
+}
+html:not(.touch-screen)::-webkit-scrollbar-track,
+html:not(.touch-screen) *::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+html:not(.touch-screen)::-webkit-scrollbar-thumb,
+html:not(.touch-screen) *::-webkit-scrollbar-thumb {
+  background: var(--color-yellow);
+}
+:focus,:active,:visited {
+  outline: none;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-black);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.lock {
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+h1,.h1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 35px;
+  line-height: 1.4em;
+}
+h2,.h2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 30px;
+  line-height: 1.4em;
+}
+h3,.h3 {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 25px;
+  line-height: 1.4em;
+}
+.text,.text p {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 8px;
+}
+.text:last-child,.text p:last-child {
+  margin-bottom: 0;
+}
+.semi-bold {
+  font-weight: 600;
+}
+.media {
+  font-weight: 500;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 56px;
+  font-size: 20px;
+  line-height: 52px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: 2px solid var(--color-yellow);
+  background-color: var(--color-yellow);
+  padding: 0 32px;
+  will-change: transform;
+  transition: all 0.3s;
+}
+.btn:active {
+  transform: translateY(5px);
+}
+.btn:disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}
+.inputBlock {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-right: 30px;
+}
+.inputBlock input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 56px;
+  text-align: right;
+  font-size: 20px;
+  color: var(--color-black);
+  padding: 0 30px;
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s;
+}
+.inputBlock input:focus {
+  border-color: var(--color-black);
+}
+.inputBlock.invalid input {
+  border-color: var(--color-red);
+}
+.inputBlock.invalid input::placeholder {
+  color: var(--color-red);
+}
+.inputBlock p {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: var(--color-red);
+  margin-bottom: 8px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/*media*/
+@media(min-width: 1200px){
+  .btn:hover {
+    background-color: transparent;
+  }
+}
+@media(max-width: 991px){
+  :root {
+    --header-height: 80px;
+  }
+  h1,.h1 {
+    font-size: 30px;
+  }
+  h2,.h2 {
+    font-size: 28px;
+  }
+  h3,.h3 {
+    font-size: 22px;
+  }
+  .text,.text p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 18px;
+    line-height: 48px;
+    height: 52px;
+    padding: 0 30px;
+  }
+  .inputBlock {
+    margin-right: 25px;
+  }
+  .inputBlock input {
+    font-size: 18px;
+    height: 52px;
+  }
+}
+@media(max-width: 767px){
+  :root {
+    --header-height: 70px;
+  }
+  h1,.h1 {
+    font-size: 26px;
+  }
+  h2,.h2 {
+    font-size: 24px;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 44px;
+    height: 48px;
+    padding: 0 28px;
+  }
+  .inputBlock {
+    margin-right: 20px;
+  }
+  .inputBlock input {
+    height: 48px;
+    font-size: 16px;
+    padding: 0 28px;
+  }
+}
+@media(max-width: 575px){
+  :root {
+    --header-height: 60px;
+  }
+  h1,.h1 {
+    font-size: 24px;
+  }
+  h2,.h2 {
+    font-size: 22px;
+  }
+  h3,.h3 {
+    font-size: 20px;
+  }
+  .text,.text p {
+    font-size: 17px;
+  }
+}
+@media(max-width: 480px){
+  .btn {
+    width: 100%;
+    font-size: 15px;
+    padding: 0 20px;
+  }
+  .inputBlock {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .inputBlock input {
+    font-size: 15px;
+    text-align: left;
+    padding: 0 20px;
+  }
 }

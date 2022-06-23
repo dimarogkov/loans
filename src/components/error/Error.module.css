@@ -1,0 +1,26 @@
+.error {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - var(--header-height));
+    padding: 0 15px;
+}
+.error h2 {
+    margin-bottom: 10px;
+}
+.error div {
+    margin-bottom: 20px;
+}
+/*media*/
+@media(max-width: 575px){
+    .error h2 {
+        margin-bottom: 8px;
+    }
+    .error div {
+        margin-bottom: 16px;
+    }
+}

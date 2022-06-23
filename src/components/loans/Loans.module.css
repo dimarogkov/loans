@@ -1,0 +1,8 @@
+.loans {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1350px;
+    padding: 30px 15px;
+    margin: 0 auto;
+}
