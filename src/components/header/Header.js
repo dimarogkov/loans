@@ -7,7 +7,7 @@ const Header = () => {
         <>
             <div className={classes.header}>
                 <div className={classes.logo}>
-                    <NavLink to="/" className="h2 semi-bold">Current Loans</NavLink>
+                    <NavLink to="/loans" className="h2 semi-bold">Current Loans</NavLink>
                 </div>
             </div>
             <div className={classes.headerMargin}></div>
